@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Trevor Belmont",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/3/3e/Trevor_Belmont_%28animated_series%29_-_06.jpg/revision/latest/scale-to-width-down/533?cb=20181028200147",
+    "pickedYet": "false"
+  },
+  {
+    "id": 2,
+    "name": "Alucard",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/d/d9/Alucard_Netflix.jpg/revision/latest/scale-to-width-down/640?cb=20170630185541",
+    "pickedYet": "false"
+  },
+  {
+    "id": 3,
+    "name": "Dracula",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/2/25/Warcouncil.jpg/revision/latest/scale-to-width-down/640?cb=20181026235930",
+    "pickedYet": "false"
+  },
+  {
+    "id": 4,
+    "name": "Sypha",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/d/dd/Sypha_Belnades_Netflix.jpg/revision/latest/scale-to-width-down/640?cb=20170630184705",
+    "pickedYet": "false"
+  },
+  {
+    "id": 5,
+    "name": "The Elder",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/0/0e/Elder_-_01.png/revision/latest/scale-to-width-down/409?cb=20180125052135",
+    "pickedYet": "false"
+  },
+  {
+    "id": 6,
+    "name": "Lisa Tepes",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/f/f2/Lisa_Tepes_-_01.png/revision/latest/scale-to-width-down/592?cb=20180214101100",
+    "pickedYet": "false"
+  },
+  {
+    "id": 7,
+    "name": "The Bishop",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/f/fc/Bishop_-_02.png/revision/latest/scale-to-width-down/491?cb=20180915234704",
+    "pickedYet": "false"
+  },
+  {
+    "id": 8,
+    "name": "Hector",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/e/ee/Hector_%28animated_series%29_-_03.png/revision/latest/scale-to-width-down/640?cb=20180830160646",
+    "pickedYet": "false"
+  },
+  {
+    "id": 9,
+    "name": "Carmilla",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/6/6c/Carmilla_%28animated_series%29_-_01.png/revision/latest/scale-to-width-down/478?cb=20180815000824",
+    "pickedYet": "false"
+  },
+  {
+    "id": 10,
+    "name": "Godbrand",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/6/65/Godbrand_-_02.jpg/revision/latest/scale-to-width-down/480?cb=20180909111559",
+    "pickedYet": "false"
+  },
+  {
+    "id": 11,
+    "name": "Issac",
+    "image": "https://vignette.wikia.nocookie.net/castlevania/images/d/da/Isaac_animation_2.jpg/revision/latest/scale-to-width-down/640?cb=20181027191351",
+    "pickedYet": "false"
+  },
+  {
+    "id": 12,
+    "name": "Cho and Dragoslav",
+    "image":"https://vignette.wikia.nocookie.net/castlevania/images/5/51/Castlevania_Netflix_Vampire_Cho_%26_Dragoslav.png/revision/latest/scale-to-width-down/640?cb=20181214221925",
+    "pickedYet": "false"
+  }
+  
+]

@@ -1,0 +1,10 @@
+.jumbotron {
+    background-image: url("../../images/CastlevaniaBig.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    background-color: black;
+    height: 250px;
+
+  }

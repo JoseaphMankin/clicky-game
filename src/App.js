@@ -6,18 +6,17 @@ import Navbar from './components/Navbar';
 import friends from './friends.json';
 import './App.css';
 
-let correctGuesses = 0;
-let topScore = 0;
-let clickMessage = "Click on an image to earn points, but don't click on any of them more than once!";
+// let correctGuesses = 0;
+// let topScore = 0;
+// let clickMessage = "Click on an image to earn points, but don't click on any of them more than once!";
 
 class App extends Component {
 	// Set this.state
 	state = {
 		friends,
-		clickMessage: '',
-    correctGuesses,
-    topScore,
-    clickMessage
+		clickMessage: "Click on an image to earn points, but don't click on any of them more than once!",
+        correctGuesses: 0,
+        topScore: 0
 	};
 
   setClicked = id => {
@@ -30,53 +29,62 @@ class App extends Component {
 
     // If the matched image's clicked value is already true, game over
     if (clickedMatch[0].clicked){
-
-        correctGuesses = 0;
-        clickMessage = "Curses! You already clicked on that one! Dracula bids you to try again!"
+        this.setState({correctGuesses: 0, clickMessage: "Curses! You already clicked on that one! Dracula bids you to try again!"});
+        
 
         for (let i = 0 ; i < friends.length ; i++){
             friends[i].clicked = false;
         }
 
-        this.setState({clickMessage});
-        this.setState({ correctGuesses });
         this.setState({friends});
 
     // Otherwise, if clicked = false, and the user hasn't finished
-    } else if (correctGuesses < 11) {
+    } else if (this.state.correctGuesses < 11) {
 
         // Set its value to true
         clickedMatch[0].clicked = true;
-
-        // increment the appropriate counter
-        correctGuesses++;
         
-        clickMessage = "Nice! You haven't clicked on that one yet! Keep going!";
+        // increment the appropriate counter
+        this.setState({
+            correctGuesses: this.state.correctGuesses + 1, 
+            clickMessage: "Nice! You haven't clicked on that one yet! Keep going!"},
+            () => {console.log(this.state.correctGuesses, this.state.topScore)
+            if (this.state.correctGuesses > this.state.topScore){
+                console.log(this.state.correctGuesses, this.state.topScore)
+                this.setState({
+                    topScore: this.state.correctGuesses
+                },
+                () => console.log(this.state.correctGuesses, this.state.topScore)
+                );
+            }
+            }
+            
+            );
+        
 
-        if (correctGuesses > topScore){
-            topScore = correctGuesses;
-            this.setState({ topScore });
-        }
+        
 
         // Shuffle the array to be rendered in a random order
         friends.sort(function(a, b){return 0.5 - Math.random()});
 
         // Set this.state.friends equal to the new friends array
         this.setState({ friends });
-        this.setState({correctGuesses});
-        this.setState({clickMessage});
+        // this.setState({correctGuesses});
+        // this.setState({clickMessage});
     } else {
 
         // Set its value to true
         clickedMatch[0].clicked = true;
 
         // restart the guess counter
-        correctGuesses = 0;
+        this.setState({
+            correctGuesses: 0,
+            clickMessage: "NICE!!! You got ALL of them!!! Now, let's see if you can do it again!",
+            topScore: 12
+        });
 
         // Egg on the user to play again
-        clickMessage = "WOW!!! You got ALL of them!!! Now, let's see if you can do it again!";
-        topScore = 12;
-        this.setState({ topScore });
+        // this.setState({ topScore });
         
         for (let i = 0 ; i < friends.length ; i++){
             friends[i].clicked = false;
@@ -87,8 +95,8 @@ class App extends Component {
 
         // Set this.state.friends equal to the new friends array
         this.setState({ friends });
-        this.setState({correctGuesses});
-        this.setState({clickMessage});
+        // this.setState({correctGuesses});
+        // this.setState({clickMessage});
 
     }
 };

@@ -1,0 +1,10 @@
+h2, h3, .scoreBoard{
+    width: 100%;
+    text-align: center;
+    color: red;
+}
+
+.navbar{
+    background-color: lightgrey;
+    border: red solid 2px;
+}
